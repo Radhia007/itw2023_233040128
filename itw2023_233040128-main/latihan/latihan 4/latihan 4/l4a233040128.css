@@ -1,4 +1,4 @@
-body{
+/* body{
 line-height: 1;
 }
  ol,ul{
@@ -15,75 +15,84 @@ q:after q::before{
     table{
         border-collapse:collapse ;
         border-spacing :0;
-    }
+    } */
     /*style*/
-body {
-    font: 16px/28px arial,sans-serif;
-    background-color: #eaeaea ;
-    color: #333;
-    border-image:url(sativa.jpeg) ;
-}
-    .container{ 
-        width: 800px;
-        margin: auto;
-        background-color:#fff;
+    body {
+        font: 16px/28px arial,sans-serif;
+        background-color: black ;
+        color: #333;
+        
+        
     }
-    .header{
-        padding:20px;
+        .container{ 
+            width: 800px;
+            margin: auto;
+            background-color:#fff;
+        }
+        .header{
+            padding:20px;
+        }
+    .header.judul{
+        font-size:40px ;
+        font-weight: bold;
+        
     }
-.header.judul{
-    font-size:40px ;
-    font-weight: bold;
-}
-.header.ul.li{
-
-    display: inline-block;
-    margin-top: 20px; 
-    margin-right:5px ;
+    .header ul li{
+    
+        display: inline-block; 
+        margin-right:50px ;
+        margin-left: -43px;
+         
+    }
     .header a{
         text-decoration:none ;
         color:salmon ;
         padding: 3px;
     }
-}
-.header a:hover {
-    background-color: lightskyblue;
-    color: white;
-}
-.hero{
-    background-image: url(waw.jpeg);
-    background-size:cover ;
-    background-position:0- 180px ;
-    border-bottom: 5px solid lightskyblue ;
-    border-top: 5px solid salmon;
-    height : 250px;
-}
-.content{
-    padding: 20px;
-}
-.content h2{
-    font-size:28px ;
-    font-weight: bold;
-}
-.content.penulis {
-    font-size: 11px;
-    .content. penulis.a{
-        color 
-text-decoration: none;
+    .header a:hover {
+        background-color: lightskyblue;
+        color: white;
     }
-}
-.content.p{
-    margin-bottom:20px ;
-    font-size: 14px;
-}
-.fotter{
-    background-color: #333;
-    pading: 20px;
-}
-.fotter.copy{
-
-    color:#eaeaea;
-    text-align: center;
-    font-size: 12px;
-}
-
+    .hero{
+        background-image: url('waw.jpeg');
+        background-size:cover ;
+        background-position:0- 180px ;
+        border-bottom: 5px solid lightskyblue ;
+        border-top: 5px solid salmon;
+        height : 250px;
+        width: 300px;
+        margin: auto;
+    }
+    .content{
+        padding: 20px;
+    }
+    .content h2{
+        font-size:28px ;
+        font-weight: bold;
+    }
+    .content.penulis {
+        font-size: 11px;
+    }
+    .content .penulis a{
+        text-decoration: none;
+        
+    }
+    .penulis a:hover{
+        background-color: aqua;
+    }
+    .content.p{
+        margin-bottom:20px ;
+        font-size: 14px;
+    }
+    .fotter{
+        background-color: #333;
+        padding: 20px;
+    }
+    .fotter .copy{
+    
+        color:#eaeaea;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    

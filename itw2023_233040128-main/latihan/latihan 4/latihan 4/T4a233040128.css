@@ -1,0 +1,122 @@
+/* body{
+line-height: 1;
+}
+ ol,ul{
+list-style: none;
+ }
+blockquote,q{
+    quotes: none;
+}
+blockquote:before,blockquote::after
+q:after q::before{
+    contain:'' ;
+    contain:none ;
+}
+    table{
+        border-collapse:collapse ;
+        border-spacing :0;
+    } */
+    /*style*/
+body {
+    font: 16px/28px arial,sans-serif;
+    background-image:url(th\ 2.jpeg) ;
+    color: #333;
+    
+    
+    
+    
+}
+    .container{ 
+        width: 800px;
+        margin: auto;
+        background-color:#fff;
+    }
+    .header{
+        padding:20px;
+    }
+.header.judul{
+    font-size:40px ;
+    font-weight: bold;
+    
+}
+.header ul li{
+
+    display: inline-block; 
+    margin-right:100px ;
+    margin-left: -43px;
+    
+     
+}
+.header ul{
+    margin-right: -100px;
+}
+li:hover{
+    background-color:blue ;
+}
+.header a{
+    text-decoration:none ;
+    color:salmon ;
+    padding: 3px;
+}
+.header a:hover {
+    background-color: lightskyblue;
+    color: white;
+
+}
+ol{
+    margin-left: -30px;
+
+}
+.hero{
+    background-image: url('wra.jpg');
+    background-size:cover ;
+    height: 490px;
+    margin: auto;
+}
+
+.hero2 {
+    background-image: url('BTR-WWCD.jpg');
+    background-size:cover ;
+    height: 490px;
+    margin: auto;
+}
+.content{
+    padding: 20px;
+
+}
+.content h1{
+    margin: auto;
+    text-align: center;
+}
+    
+
+.content h2{
+    font-size:28px ;
+    font-weight: bold;
+    text-align: center;
+}
+.content.penulis {
+    font-size: 11px;
+}
+.content .penulis a{
+    text-decoration: none;
+    
+}
+.penulis a:hover{
+    background-color: aqua;
+}
+.content.p{
+    margin-bottom:20px ;
+    font-size: 14px;
+}
+.fotter{
+    background-color: #333;
+    padding: 20px;
+}
+.fotter .copy{
+
+    color:#eaeaea;
+    text-align: center;
+    font-size: 30px;
+}
+
