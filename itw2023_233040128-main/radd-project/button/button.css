@@ -1,0 +1,12 @@
+. switch _ knob-container {
+    overflow: hidden;
+    top: 0.5em;
+    left: 0.5em;
+    width: 4em;
+    height: 2em;
+}
+. switch _ knob-neon {
+    display: block;
+    width: 2em;
+    height: auto;
+}
