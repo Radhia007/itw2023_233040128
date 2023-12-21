@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+/*navbar*/
+nav{
+display: flex;
+background-color: rgb(130, 48, 184);
+justify-content: space-around;
+/* padding: 20px 0; */
+color: black;
+height: 50px;
+align-items: center;
+}
+nav ul{
+    display: flex;
+list-style: none;
+width: 40%;
+justify-content: space-between;
+
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.7;
+}
+nav.logo{
+    font-family:'Pacifico', cursive; 
+    letter-spacing: 3px;
+}
+nav ul li a:hover{
+color: rgb(130, 48, 184);;
+}
+/* hamburger menu */
+.menu-toggle{
+display: none;
+flex-direction: column;
+height: 20px;
+background-color: rgb(130, 48, 184);
+justify-content: space-between;
+}
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: wheat;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+/* 
+hamburger menu animation
+*/
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px,-1px);
+
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-1px,0);
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+}
+.menu-toggle span:nth-child(2){
+ transform-origin: 0 0;
+    background-color: red;
+}
+.menu-toggle span:nth-child(3){
+    background-color: black;
+}
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+    background-color: red;
+   }
+
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity:0;
+    margin-left: -8px;
+    z-index: 2;
+    
+    cursor: pointer;
+}
+/* responsive break */
+/* ukuran tablet */
+@media screen and (max-width:768px) {
+    nav ul{
+        width: 50%;
+    }
+}
+/* ukuran mobile */
+@media screen and (max-width:576px) {
+    .menu-toggle{
+        display: flex ;
+    }
+       
+    nav ul{
+    position: absolute;
+    right: 0;
+    top: 0;width: 60%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rebeccapurple;
+    z-index:-1;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+    }
+    nav ul.slide{
+        opacity:1 ;
+        transform: translate(0);
+    }
+    
+}
